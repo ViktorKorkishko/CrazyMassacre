@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] private GameObject _playerPrefab;
+
+    private void Start()
+    {
+        PhotonNetwork.Instantiate(_playerPrefab.name, Vector3.zero, Quaternion.identity);       
+    }
+
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
