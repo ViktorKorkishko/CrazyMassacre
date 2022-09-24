@@ -21,7 +21,7 @@ namespace Core.Providers
 
         private int GetIndex(T key)
         {
-            var index = Ids.IndexOf(key) - 1; // -1 because of none key
+            var index = Ids.IndexOf(key);
             return index;
         }
     }
