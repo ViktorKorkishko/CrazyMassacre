@@ -1,15 +1,21 @@
+using Game.Player.Factories;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Zenject;
 
+// TODO: refactor
+// temp class
 public class GameManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private GameObject _playerPrefab;
 
+    [Inject] private PlayerFactory _playerFactory;
+
     private void Start()
     {
-        PhotonNetwork.Instantiate(_playerPrefab.name, Vector3.zero, Quaternion.identity);       
+        _playerFactory.Create(_playerPrefab.name);
     }
 
     public void LeaveRoom()

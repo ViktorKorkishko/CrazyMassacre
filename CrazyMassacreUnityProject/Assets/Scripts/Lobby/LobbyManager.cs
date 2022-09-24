@@ -3,6 +3,8 @@ using Photon.Pun;
 using TMPro;
 using Photon.Realtime;
 
+// TODO: refactor
+// temp class
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private TMP_Text _text;
