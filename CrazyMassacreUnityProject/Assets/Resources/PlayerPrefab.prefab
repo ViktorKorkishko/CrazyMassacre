@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d83658c562768f40a346767ed786ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _root: {fileID: 7049222655023283714}
+  _photonView: {fileID: 7046184058123947211}
   _rigidbody: {fileID: 6211409521096067846}
 --- !u!1 &7049222655023283715
 GameObject:
@@ -55,12 +55,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7049222655023283714}
-  - component: {fileID: 4432103909236854407}
   - component: {fileID: 7046184058123947211}
   - component: {fileID: 4336086390420790272}
   - component: {fileID: 5941137826415585517}
   - component: {fileID: 6211409521096067846}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,18 +84,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4432103909236854407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7049222655023283715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d1be2d0b62e974e96c0d41337213a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7046184058123947211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7049222656743654931}
   - component: {fileID: 4639808584490507967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
